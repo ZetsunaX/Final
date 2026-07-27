@@ -1,0 +1,20 @@
+# Render Blueprint — ใช้เมื่อ deploy ผ่าน "New > Blueprint" บน Render
+# ดูคู่มือใน README.md
+services:
+  - type: web
+    name: line-chatbot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CHANNEL_SECRET
+        sync: false
+      - key: CHANNEL_ACCESS_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.1-flash-lite
