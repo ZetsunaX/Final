@@ -106,7 +106,6 @@ btnSendCard.addEventListener('click', async () => {
       header: {
         type: 'box',
         layout: 'vertical',
-        align: 'center',
         contents: [
           {
             type: 'text',
@@ -244,7 +243,6 @@ btnShareCoach.addEventListener('click', async () => {
       header: {
         type: 'box',
         layout: 'vertical',
-        align: 'center',
         contents: [
           {
             type: 'text',
